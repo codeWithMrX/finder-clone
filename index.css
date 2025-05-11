@@ -1,0 +1,79 @@
+* {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.fixBg {
+    height: 100%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.078);
+}
+
+.nav-link {
+    color: black;
+    font-size: 50px;
+    transition: color .3s;
+}
+
+.nav-link:hover {
+    color: rgb(149, 146, 151);
+}
+
+.display-1{
+    font-size: 150px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    background-color: rgb(149, 146, 151);
+    left: 50%;
+    bottom: 0px;
+    transition: all 0.4s ease-out;
+}
+
+a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+#sec1{
+    background-image: url('https://cdn.pixabay.com/photo/2018/03/10/18/03/laptop-3214756_1280.png');
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+}
+
+#sec1-row{
+    background-color: #000000c0; 
+    height: 100%; 
+    width: 50.8%;
+}
+
+.sec1-txt{
+    margin-top: 10%;
+    margin-left: 25%;
+}
+
+@media screen  and (max-width: 744px){
+    .nav-link {
+        font-size: 30px;
+    }
+
+    .fixBg{
+        width: 100%;
+        border-radius: 0;
+    }
+}
